@@ -1,0 +1,23 @@
+name: PlayerCap
+version: '${project.version}'
+main: io.github.stonley890.playercap.PlayerCap
+api-version: '1.20'
+prefix: PlayerCap
+load: STARTUP
+authors: [Stonley890]
+description: Override the player limit!
+website: https://github.com/Stonley890/PlayerCap
+
+commands:
+  playercap:
+    description: Set the player cap.
+    usage: /<command> [limit]
+    permission: playercap.set
+
+permissions:
+  playercap.set:
+    description: Allows setting the player cap.
+    default: op
+  playercap.bypass:
+    description: Bypass the player cap.
+    default: op
