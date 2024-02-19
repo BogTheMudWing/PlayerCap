@@ -14,8 +14,9 @@ commands:
     usage: /<command> [limit]
     permission: playercap.set
   setmotd:
-    description: Set the server MOTD.
+    description: Set the server MOTD. Allows color codes prefixed with &.
     usage: /<command> [message]
+    permission: playercap.motd
 
 permissions:
   playercap.set:
