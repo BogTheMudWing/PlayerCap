@@ -1,6 +1,6 @@
 package io.github.stonley890.playercap.listeners;
 
-import io.github.stonley890.playercap.PlayerCap;
+import io.github.stonley890.playercap.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerListPingEvent;
@@ -12,11 +12,11 @@ public class ListenServerPing implements Listener {
     public void onPing(@NotNull ServerListPingEvent event) {
 
         // Change player cap to reflect override
-        event.setMaxPlayers(PlayerCap.getPlugin().getServer().getMaxPlayers());
+        event.setMaxPlayers(Main.getPlugin().getServer().getMaxPlayers());
 
         // Change MOTD
-        if (PlayerCap.MOTD != null) {
-            event.setMotd(PlayerCap.MOTD);
+        if (Main.MOTD != null) {
+            event.setMotd(Main.MOTD);
         }
 
     }

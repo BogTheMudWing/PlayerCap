@@ -1,6 +1,6 @@
 package io.github.stonley890.playercap.commands;
 
-import io.github.stonley890.playercap.PlayerCap;
+import io.github.stonley890.playercap.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,8 +12,8 @@ public class CmdSetmotd implements CommandExecutor {
 
         if (args.length == 0) {
             // Reset MOTD
-            PlayerCap.MOTD = null;
-            sender.sendMessage(PlayerCap.PREFIX + "Reset MOTD to default:\n" + sender.getServer().getMotd());
+            Main.MOTD = null;
+            sender.sendMessage(Main.PREFIX + "Reset MOTD to default:\n" + sender.getServer().getMotd());
         } else {
             // Set MOTD
 
@@ -24,8 +24,8 @@ public class CmdSetmotd implements CommandExecutor {
 
             String newMotd = builder.toString().replaceAll("&", "§").replaceAll("\\\\n","\n").strip();
 
-            PlayerCap.MOTD = newMotd;
-            sender.sendMessage(PlayerCap.PREFIX + "MOTD set to\n" + newMotd);
+            Main.MOTD = newMotd;
+            sender.sendMessage(Main.PREFIX + "MOTD set to\n" + newMotd);
         }
 
         return true;

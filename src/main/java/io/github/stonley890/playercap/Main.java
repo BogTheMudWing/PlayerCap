@@ -4,16 +4,17 @@ import io.github.stonley890.playercap.commands.CmdPlayercap;
 import io.github.stonley890.playercap.commands.CmdSetmotd;
 import io.github.stonley890.playercap.listeners.ListenPlayerLogin;
 import io.github.stonley890.playercap.listeners.ListenServerPing;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
 import java.util.logging.Level;
 
-public final class PlayerCap extends JavaPlugin {
+public final class Main extends JavaPlugin {
 
     public static String MOTD = null;
-    public static PlayerCap plugin;
+    public static Main plugin;
 
     public final String VERSION = getDescription().getVersion();
     public static final String PREFIX = ChatColor.YELLOW + "[" + ChatColor.WHITE + "PlayerCap" + ChatColor.YELLOW + "] " + ChatColor.RESET;
@@ -34,7 +35,8 @@ public final class PlayerCap extends JavaPlugin {
         Objects.requireNonNull(getServer().getPluginCommand("setmotd")).setExecutor(new CmdSetmotd());
 
         // Create config if needed
-        getDataFolder().mkdir();
+        boolean dirMade = getDataFolder().mkdir();
+        if (!dirMade) Bukkit.getLogger().warning("Data directory could not be created!");
         saveDefaultConfig();
 
         // Retrieve saved limit from config.yml
@@ -53,7 +55,7 @@ public final class PlayerCap extends JavaPlugin {
 
     }
 
-    public static PlayerCap getPlugin() {
+    public static Main getPlugin() {
         return plugin;
     }
 
