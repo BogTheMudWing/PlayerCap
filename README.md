@@ -7,7 +7,7 @@ PlayerCap is a lightweight 1.20.x Bukkit plugin that allows you to change the se
 
 ## Commands
 ### `/playercap`
-Pauses chat for non-OPs.
+Change the player limit.
 - Usage: `/playercap [limit]`
 - Permission: `playercap.set`
 ### `/setmotd`
