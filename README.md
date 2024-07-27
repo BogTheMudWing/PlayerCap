@@ -1,7 +1,7 @@
 # PlayerCap
 Override the player limit!
 
-PlayerCap is a lightweight 1.20.x Bukkit plugin that allows you to change the server's player limit and MOTD in-game in real time.
+PlayerCap is a lightweight Bukkit plugin that allows you to change the server's player limit and MOTD in-game in real time.
 
 ![demo](https://github.com/Stonley890/PlayerCap/assets/79172597/92ed871f-56ee-4da3-8b5f-e259b1ea9721)
 
