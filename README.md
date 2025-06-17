@@ -24,4 +24,8 @@ Bypass the player cap.
 ### `playercap.motd`
 Allows setting the MOTD.
 
-*If you find a problem, please create a [bug report](https://github.com/Stonley890/PlayerCap/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=).*
+*If you find a problem, please create a [bug report](https://github.com/BogTheMudWing/PlayerCap/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=).*
+
+---
+
+[![BogTheMudWing](https://nextcloud.macver.org/apps/files_sharing/publicpreview/jyWLnm4i724mxXg?file=/&fileId=61792&x=3390&y=1906&a=true&etag=c43260166526abc326861afd5244df8e)](https://blog.macver.org/about-me)
