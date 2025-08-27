@@ -1,6 +1,9 @@
 # PlayerCap
 Override the player limit!
 
+ > [!NOTE]
+ > This repository is mirrored to [GitHub](https://github.com/BogTheMudWing/PlayerCap) for visibility. Issues and pull requests should be made on [Macver Code Athenaeum](https://code.macver.org/Bog/PlayerCap).
+
 PlayerCap is a lightweight Bukkit plugin that allows you to change the server's player limit and MOTD in-game in real time.
 
 ![demo](https://github.com/Stonley890/PlayerCap/assets/79172597/92ed871f-56ee-4da3-8b5f-e259b1ea9721)
@@ -23,8 +26,6 @@ Allows setting the player cap.
 Bypass the player cap.
 ### `playercap.motd`
 Allows setting the MOTD.
-
-*If you find a problem, please create a [bug report](https://github.com/BogTheMudWing/PlayerCap/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=).*
 
 ---
 
